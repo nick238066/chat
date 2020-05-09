@@ -19,3 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/chat-room', 'ChatRoomController@index')->name('chat-room');
+Route::post('/chat-room', 'ChatRoomController@beginChat')->name('chat-room.beginchat');
+Route::post('/chat-room/save', 'ChatRoomController@saveMessage')->name('chat-room.save.message');
